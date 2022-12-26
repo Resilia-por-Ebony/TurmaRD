@@ -12,12 +12,32 @@
         <img src="https://i.imgur.com/RjWGTVn.png" title="source: imgur.com" 
         width="60px"/>
     </a>
+    <a href="#">
+        <img src="https://i.imgur.com/fFUhinJ.png" title="source: imgur.com" 
+        width="60px"/>
+    </a>
+    <a href="#">
+        <img src="https://i.imgur.com/r5TIjbs.png" title="source: imgur.com" 
+        width="60px"/>
+    </a>
      <a href="#">    
         <img src="https://i.imgur.com/Qx9OlTM.png" title="source: imgur.com" 
         width="60px"/>
     </a>
     <a href="#">    
         <img src="https://i.imgur.com/qLlcRS9.png" title="source: imgur.com" 
+        width="60px"/>
+    </a>
+    <a href="#">    
+        <img src="https://i.imgur.com/NO5rFQK.png" title="source: imgur.com" 
+        width="60px"/>
+    </a>
+    <a href="#">    
+        <img src="https://i.imgur.com/c4qbsva.png" title="source: imgur.com" 
+        width="60px"/>
+    </a>
+    <a href="#">    
+        <img src="https://i.imgur.com/QG8Hi7S.png" title="source: imgur.com" 
         width="60px"/>
     </a>
 </div>

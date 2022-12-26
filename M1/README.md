@@ -12,6 +12,14 @@
         <img src="https://i.imgur.com/RjWGTVn.png" title="source: imgur.com" 
         width="60px"/>
     </a>
+    <a href="#">
+        <img src="https://i.imgur.com/fFUhinJ.png" title="source: imgur.com" 
+        width="60px"/>
+    </a>
+    <a href="#">
+        <img src="https://i.imgur.com/r5TIjbs.png" title="source: imgur.com" 
+        width="60px"/>
+    </a>
      <a href="#">    
         <img src="https://i.imgur.com/Qx9OlTM.png" title="source: imgur.com" 
         width="60px"/>
