@@ -22,4 +22,9 @@
     <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/main/M1/Projeto-Individual" >Projeto individual M1</a><br>
     <a href="#" >Projeto em grupo M1</a>
 </div>
-<br /><br />
+<br/>
+<div align="center">
+    <a href="../README.md">
+        <img src="https://i.imgur.com/kfHCxif.png" title="source: imgur.com" width="5%"/>
+    </a>
+</div>

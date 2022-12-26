@@ -52,4 +52,4 @@ item fora deste escopo, configura uma entrega de pedido errada.
         <img src="https://i.imgur.com/kfHCxif.png" title="source: imgur.com" width="5%"/>
     </a>
 </div>
-<div align="center">Ebony SyS</div>
+
