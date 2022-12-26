@@ -20,7 +20,6 @@
         <img src="https://i.imgur.com/qLlcRS9.png" title="source: imgur.com" 
         width="60px"/>
     </a>
-
 </div>
 <hr>
 <div align="center">

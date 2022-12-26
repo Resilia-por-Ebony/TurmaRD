@@ -4,12 +4,20 @@
         <img src="https://i.imgur.com/QSU2Ksh.png" title="source: imgur.com" 
         width="60px"/>
     </a>
-    <a href="#">    
-        <img src="https://i.imgur.com/Qx9OlTM.png" title="source: imgur.com" 
-        width="80px"/>
-    </a>
     <a href="#">
         <img src="https://i.imgur.com/75ZnyoP.png" title="source: imgur.com" 
+        width="60px"/>
+    </a>
+    <a href="#">
+        <img src="https://i.imgur.com/RjWGTVn.png" title="source: imgur.com" 
+        width="60px"/>
+    </a>
+     <a href="#">    
+        <img src="https://i.imgur.com/Qx9OlTM.png" title="source: imgur.com" 
+        width="60px"/>
+    </a>
+    <a href="#">    
+        <img src="https://i.imgur.com/qLlcRS9.png" title="source: imgur.com" 
         width="60px"/>
     </a>
 </div>
