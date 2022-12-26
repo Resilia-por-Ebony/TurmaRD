@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Ubuntu&display=swap');
+
+:root {
+    --vermelho: #ff0000;
+    --preto: #101010;
+    --branco: #fff;
+    --cinza: #828282;
+    --dourado1: #705A28;
+    --dourado2: #FAF8CF;
+    --fontPrimaria: 'Rubik 80s Fade';
+    --fontSecundaria: 'Ubuntu';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, var(--preto), var(--vermelho), var(--preto));
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+
+#img:hover {
+    transform: rotate(720deg); 
+    transition: 1s;
+}
+
+.txt {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--preto);
+    font-family: var(--fontPrimaria);
+}
+
+.txtdegrade {
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, var(--dourado1), var(--dourado2), var(--dourado1));
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.txtdegrade:hover {
+    letter-spacing: 5px;
+    transition: 0.5s;
+}
+
+#nomecliente {
+    padding-top: 2px;
+    font-size: 2rem;
+    font-family: var(--fontSecundaria);
+}
+
+footer {
+    color: var(--preto);
+    font-family: var(--fontSecundaria);
+    bottom: 0;
+    margin-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+footer span {
+    color: var(--cinza);
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,155 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+/* Configurando o quadrado principal, classe pai */
+.quadrado {
+    /* Colocando uma borda de com 2px de espessura e cor vermelha */
+    border: 2px solid #ff0000;
+    
+    /* Largura e altura do quadrado respectivamente */
+    width: 400px;
+    height: 400px;
+
+    /* Cor de fundo quadrado */
+    background-color: #faa8a8;
+
+/*
+    Aqui vamos configurar o posicionamento dento do quadrado,
+    com display: flex;  
+*/
+    
+    /*
+    Note que ao alterar para display: flex; O posicionamento dos 
+    quadradinho vai mudar, por padrão o flex mantem os elementos
+    a esquerda, no topo e na mesma linha. 
+    */
+    display: flex; 
+
+    /* ALTERANDO A DIREÇÃO, PODENDO SER LINHA OU COLUNA */
+    flex-direction: row; 
+    /* 
+    column - Alinha os elementos em coluna, alinhando no topo
+    e a esquerda..
+
+    row-reverse - Mantem em linha invertendo a ordem dos 
+    elementos e começando pelo final da linha.
+
+    column-reverse - Mantem em coluna invertendo a ordem dos
+    elementos e começando pelo final da coluna. 
+    */
+
+    
+    /* ALTERANDO O ESPAÇAMENTO */
+    /* Alinha os elementos ao centro */
+    justify-content: space-around;
+    /* 
+    Alinhamentos, como space-between, space-around e space-evenly
+    trazem um alinhamento bastante útil, experimente...
+    Ps. Os alinhamentos funcionam também quando a direção for coluna.
+    */
+
+
+    /* ALTERANDO ALINHAMENTO VERTICAL */
+    align-items: center;
+    /* 
+    Ao alinhar elementos na vertical, fique atento à direção, caso esteja
+    como Row, vc fará o alinhamento na vertical, caso esteja em coluna
+    vc fará o alinhamento na horizontal.
+
+    Também podemos alinhar elementos de tamanhos diferentes, experimente
+    mudar a altura dos quadradinhos e troque os valores para flex-end/start
+    */
+
+
+    /* ALTERANDO O QUE ACONTECE QUANDO NÃO HOUVER MAIS ESPAÇO */
+    flex-wrap: wrap;
+    /* Ao diminuir a página, essa propriedade indica como os elementos 
+    irão se comportar. 
+    - Wrap indica que quando não for mais possível reduzir os elementos
+    para acompanhar o tamanho da página, eles serão colocados na linha abaixo,
+    no caso de colunas, serão colocados na coluna ao lado 
+    - no-Wrap indica que a linha não serão quebrada, neste caso, se a página 
+    não comportar os elementos em seu tamanho mínimo, eles simplesmentes
+    sairão do escopo onde foram alocado.
+    */
+}
+
+/*
+Criado os quadradinhos, lembrando que todos eles tem a mesma  
+classe 'quadradinho', portanto, basta estilizar apenas uma vez e 
+todos receberão a mesma configuração de estilo 
+*/
+.quadradinho {
+    width: 100px;
+    height: 100px;
+
+    border: 2px solid #000;
+    background: #303030;
+
+    /* cor do texto dento dos quadradinhos */
+    color: white;
+
+/*
+    Aqui vamos configurar o posicionamento dento dos quadradinhos,
+    com display: flex; Observe que as configurações aqui afetarão 
+    o conteúdo dos quadradinhos. 
+*/
+
+    display: flex;
+    justify-content: center;
+
+    /* Essa propriedade indica o tamanho inicial que o elemento terá,
+    caso a página seja reduzida, os elementos irão diminuir de forma 
+    responsiva até atingir o tamanho inicial configurado no 'flex-basis'
+    ao atingir, o elemento para de diminuir 
+    */
+    flex-basis:100px;
+
+}
+
+
+/* ALTERANDO POSICIONAMENTO DE UM ÚNICO ELEMENTO */
+
+/* 
+Flex-Grow
+Indica como o elemento irá crescer em relação aos outros
+Neste exemplo, configuramos para que o elemento quad1 tenha um grow de 2
+enquanto que os elementos quad2 e 3 crescem com grow 1, ou seja, o quad1 
+terá sempre o dobro do tamanho dos demais a medida que a tela aumenta ou 
+diminui. Note que, essa configuração continuará respeitando o flex-basis. 
+*/
+/* #quad1 {
+    align-items: flex-start;
+    flex-grow: 2;
+}
+
+#quad2, #quad3 {
+    align-items: center;
+    
+} */
+
+
+/* 
+Flex-Shrink
+Indica como o elemento irá diminuir em relação aos outros
+Neste exemplo, configuramos para que o elemento quad1 tenha um shrink de 2
+enquanto que os elementos quad2 e 3 diminuem com shrink 1, ou seja, o quad1 
+terá sempre um tamanho 2 vezes menor que os outros, medida que a tela aumenta ou 
+diminui. Note que, essa configuração continuará respeitando o flex-basis,
+se existir. 
+*/
+
+/* #quad1 {
+    align-items: flex-start;
+    flex-shrink: 2;
+}
+
+#quad2, #quad3 {
+    align-items: center;
+    flex-shrink: 1;
+    
+} */
