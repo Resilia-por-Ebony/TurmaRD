@@ -48,7 +48,7 @@ item fora deste escopo, configura uma entrega de pedido errada.
     ♦ Execute via Live server e aproveite
 
 <div align="center">
-    <a href="https://www.youtube.com/channel/UC8fRZfYGd21_D8DwuEcFuHw">
+    <a href="../README.md">
         <img src="https://i.imgur.com/kfHCxif.png" title="source: imgur.com" width="5%"/>
     </a>
 </div>
