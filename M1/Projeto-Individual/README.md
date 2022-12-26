@@ -43,7 +43,7 @@ item fora deste escopo, configura uma entrega de pedido errada.
 </div><br>
 <h4 align=center>Como executar este projeto:</h4>
 
-    ♦ Inicie clonando este reposítório. 
+    ♦ Inicie clonando este repositório. 
     ♦ Pós clonar em seu PC, abra-o preferencialmente no VsCode
     ♦ Execute via Live server e aproveite
 
