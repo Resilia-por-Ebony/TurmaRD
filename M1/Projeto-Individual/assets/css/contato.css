@@ -10,6 +10,7 @@
     --corTercearia: #2a9d11;
     --preto: #000;
     --cinza: #585858;
+    --branco: #fff;
     --fontPrimaria: 'Prosto One', cursive;
     --fontSecundaria: 'Ubuntu', sans-serif;
 }
@@ -44,7 +45,7 @@ body {
 }
 
 .menu ul li {
-    padding-right: 2vw;
+    padding: 0 2vw;
     padding-top: 0.9vh;
 }
 
@@ -54,69 +55,69 @@ body {
     transition: color 1s;
 }
 
-.menu ul li a:hover {
+.menu ul li a:h/* --------Configurando Container principal-------- */over {
     color: var(--corSecundaria);
 }
 
-/* --------Configurando Container principal-------- */
+
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 14vh;
 }
 
-.txt {
-    width: 50%;
-    padding: 0.8vw 0;
-}
-
-h1, h2 {
-    font-family: var(--fontPrimaria);
-    padding: 0.2vw 0;
-}
-
-.txt span{
-    color: var(--corSecundaria);
-    transition: color 1s;
-}
-
-.txt span:hover {
-    color: var(--corTercearia);
-}
-
-h1 {
-    font-size: 4vw;
-    letter-spacing: 2px;
-}
-
-h2 {
-    font-size: 2vw;
-}
-
-article p{
-    font-size: 1vw;
-    font-weight: 500;
-    padding: 0.8vw 0 ;
-}
-
-.imgfrente img{
-    height: 60vh;
-}
-
-.social {
+/* --------Configurando formulário-------- */
+.form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.social a {
-    padding: 1vh 0;
+input, textarea, button {
+    text-align: center;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    color: var(--dark2);
 }
 
+textarea {
+    height: 20vh;
+    width: 50vw;
+}
 
-.home__social-icon:hover {
-    color: var(--corSecundaria);
+input {
+    height: 5vh;
+    width: 50vw;
+}
+
+input:focus, textarea:focus {
+    background: var(--corSecundaria);
+    color: var(--preto);
+    font-size: 1rem;
+    outline: 0;
+}
+
+#enviar {
+    width: 12vw;
+    height: 2rem;
+    background: linear-gradient(90deg, 
+    var(--corSecundaria),
+    var(--corPrimaria));
+    color: var(--preto);
+    font-weight: 500;
+}
+
+#enviar:hover {
+    background: linear-gradient(90deg, 
+    var(--corTercearia),
+    var(--dark1));
+    color: var(--corPrimaria);
+}
+
+#enviar:active {
+    color: var(--cinza);
 }
 
 /* --------Configurando rodapé-------- */
@@ -171,6 +172,12 @@ footer p {
 
 /* --------Responsividade para telas menores que 500px-------- */
 @media screen and (max-width: 500px) {
+    body {
+        background-repeat: repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+    
     .menu ul{
         height: 4vh;
     }
@@ -180,49 +187,21 @@ footer p {
         padding: 0 7px;
     }
 
-    .container {
-       margin-top: 0;
-       flex-direction: column;
-       justify-content: space-between;
-       align-items: center;
-    }    
-
-    .txt {
-        width: 90vw;
-    }
-
-    h1 {
-        font-size: 8vw;       
+    textarea {
+        height: 20vh;
+        width: 70vw;
     }
     
-    h2 {
-        font-size: 5vw;
-        text-align: end;
-        margin-bottom: 1rem;
+    input {
+        height: 3vh;
+        width: 70vw;
     }
 
-    article p{
-        font-size: 3vw;
-        font-weight: 500;
-        text-align: justify;
-        padding-bottom: 1rem;
+    #enviar {
+        width: 14vw;
+        height: 1.8rem;
     }
 
-    .imgfrente img{
-        width: 100vw;
-        height: auto;
-    }
-        
-    .social {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    
-    .social a {
-        padding: 1vh 2vw;
-    }
-    
     footer {
         height: 4vh;
         font-size: 1.5vh;
@@ -236,21 +215,6 @@ footer p {
         font-size: 1.5vh;
     }
 
-    .social {
-        margin-top:50px;
-    }
-
-    .imgfrente img{
-        margin-top: 30px;
-        width: 100vw;
-        height: auto;
-    }
-
-    .txt {
-        margin-top: 20px;
-        width: 90vw;
-    }
-
     .menu ul{
         height: 5vh;
     }
@@ -258,5 +222,10 @@ footer p {
     .menu ul li a {
         font-size: 0.7rem;
         padding: 0 7px;
+    }
+
+    #enviar {
+        width: 18vw;
+        height: 1.6rem;
     }
 }
