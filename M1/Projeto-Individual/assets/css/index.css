@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=Ubuntu:wght@&display=swap');
+
+:root{
+    --dark1: #323232;
+    --dark2: #1c1c1c;
+    --corPrimaria: #dddddd;
+    --corSecundaria: #7fef86;
+    --corTercearia: #2a9d11;
+    --preto: #000;
+    --cinza: #585858;
+    --fontPrimaria: 'Prosto One', cursive;
+    --fontSecundaria: 'Ubuntu', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: var(--fontSecundaria);
+    color: var(--corPrimaria);
+    
+}
+
+body {
+    background: linear-gradient(45deg, 
+    var(--preto), 
+    var(--cinza), 
+    var(--preto),
+    var(--corTercearia));
+    background-size: 400% 400%;
+    height: 100vh;
+    animation: cores 15s ease infinite;
+
+}
+
+/* -------- Configurando o menu -------- */
+.menu ul{
+    display: flex;
+    justify-content: center;
+    background-color:var(--dark1);
+    height: 2rem;
+}
+
+.menu ul li {
+    padding-right: 2rem;
+    padding-top: 0.4rem;
+}
+
+.menu ul li a {
+    color: var(--corPrimaria);
+    font-size: 1.1rem;
+    transition: color 1s;
+}
+
+.menu ul li a:hover {
+    color: var(--corSecundaria);
+}
+
+/* -------- Configurando o container -------- */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 14vh;
+}
+
+.txt {
+    width: 50%;
+    padding: 1rem 0;
+}
+
+.txt h1, h2 {
+    font-family: var(--fontPrimaria);
+    padding: 0.1rem 0;
+}
+
+.txt span{
+    color: var(--corSecundaria);
+    transition: color 1s;
+}
+
+.txt span:hover {
+    color: var(--corTercearia);
+}
+
+h1 {
+    font-size: 3.7rem;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+article p{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 0 ;
+}
+
+.imgfrente img{
+    height: 60vh;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social a {
+    padding: 1rem 0;
+}
+
+
+.home__social-icon:hover {
+    color: var(--corSecundaria);
+}
+
+footer {
+    background-color:var(--dark1);
+    height: 2rem;
+    color: var(--corPrimaria);
+    font-size: 1.1rem;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    position: relative;
+    padding-top: 0.3rem;
+    animation: slidel 5s ease infinite;
+}
+
+
+@keyframes cores {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes slidel {
+    0% {
+        /* transform: translateX(-40vw); */
+        opacity: 1;
+    }
+    
+    50% {
+        
+        opacity: 0.1;
+    }
+    100% {
+        /* transform: translateX(40vw); */
+        opacity: 1;
+    }
+}
