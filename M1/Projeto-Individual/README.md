@@ -1,7 +1,7 @@
 <h1 align="center">Projeto Individual M1</h1>
 
 <p align="center">
-<a href="#">clique aqui</a>, para ver o projeto.
+<a href="">clique aqui</a>, para ver o projeto.
 </p>
 
 <p>
