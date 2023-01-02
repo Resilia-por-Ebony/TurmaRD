@@ -59,6 +59,9 @@ body {
     color: var(--corSecundaria);
 }
 
+.menu ul li a:hover {
+    color: var(--corSecundaria);
+}
 
 .container {
     display: flex;
