@@ -44,17 +44,9 @@
 <hr>
 <div align="center">
     <h4>Módulos</h4>
-<<<<<<< HEAD
     <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/upstream/M1" >
         M1
     </a><br>
-    <h4>Projetos</h4>
-    <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/main/M1/Projeto-Individual" >
-        M1 ♦ Projeto individual
-    </a><br>
-    <a href="#" >
-        M1 ♦ Projeto em grupo
-    </a>
     <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/main/M1" >M1</a><br>
     <h4>Projetos</h4>
     <p> 
@@ -67,6 +59,5 @@
         ¨→..
         <a href="https://leonardop1.netlify.app/" target="_blank">VER</a><br>
     </p>
->>>>>>> upstream
 </div>
 <br /><br />
