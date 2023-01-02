@@ -51,10 +51,10 @@
             M1 ♦ Projeto individual
         </a>
         ¨→..
-        <a href="https://leonardop1.netlify.app/">VER</a><br>
+        <a href="https://leonardop1.netlify.app/" target="_blank">VER</a><br>
         <a href="#" >M1 ♦ Projeto em grupo</a>
         ¨→..
-        <a href="https://leonardop1.netlify.app/">VER</a><br>
+        <a href="https://leonardop1.netlify.app/" target="_blank">VER</a><br>
     </p>
 </div>
 <br /><br />
