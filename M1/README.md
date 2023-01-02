@@ -28,8 +28,8 @@
 <hr>
 <div align="center">
     <h4>Códigos das live code's</h4>
-    <a href="#" >HTML e CSS</a><br>
-    <a href="#" >JavaScript</a>
+    <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/main/M1/HTML%20CSS" >HTML e CSS</a><br>
+    <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/main/M1/Js" >JavaScript</a>
     <h4>Projetos</h4>
     <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/main/M1/Projeto-Individual" >Projeto individual</a><br>
     <a href="#" >Projeto em grupo</a>
