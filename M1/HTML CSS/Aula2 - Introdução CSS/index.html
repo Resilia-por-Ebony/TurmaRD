@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução Css</title>
+
+    <!--
+    Ao criar a folha de estilo em outro arquivo (mais aconselhável), 
+    é necessário linkar com o arquivo HTML para que as configurações 
+    funcionem corretamente. 
+    -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--
+    Podemos criar estilos dentro da TAG head, (não aconselhável),
+    basta invocar a TAG Style como no exemplo abaixo. 
+    -->
+    <style>
+
+        /* 
+        Criando estilo selecionando a própria TAG 
+        Neste caso, todas as Tags H1 que tivesserem no código
+        sofrerão essa alteração de cor
+        */
+        h1 {
+
+            /* Propriedade : valor */
+                  color    : blue;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Leonardo Alves</h1>
+
+    <!--
+    Também podemos invocar a TAG style dentro da própria TAG que 
+    queremos estilizar, (não aconselhável). A sintaxe para fica 
+    um pouco diferente. 
+    -->
+    <p style="color: #012104;">
+        ...aliada minha é a força e poderosa aliada ela é. A vida cria, 
+        crescer ela faz, é energia que cerca nós e liga nós. Luminosos seres 
+        somos nós, não essa rude matéria, VOCÊ PRECISA A FORÇA SENTIR AO 
+        REDOR SEU.
+    </p>
+
+    <!--
+    Essa TAG P se destaca quando for estilizado o ID='frasedodia'
+    configurações onde apenas a TAG P for selecionada, essa Também
+    será afetada.  
+    -->
+    <p id="frasedodia">
+        Pq a laranja, se chama Laranja e o limão não se chama Verde?
+    </p>
+
+    <img class="imgPrincipal" src="assets/img/yoda.jpeg" alt="personagem de desenho animado">
+
+</body>
+</html>

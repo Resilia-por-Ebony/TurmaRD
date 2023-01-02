@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=Ubuntu:wght@&display=swap');
+
+/* --------Variáveis de estilo-------- */
+:root{
+    --dark1: #323232;
+    --dark2: #1c1c1c;
+    --corPrimaria: #dddddd;
+    --corSecundaria: #7fef86;
+    --corTercearia: #2a9d11;
+    --preto: #000;
+    --cinza: #585858;
+    --fontPrimaria: 'Prosto One', cursive;
+    --fontSecundaria: 'Ubuntu', sans-serif;
+}
+
+/* --------Configuração geral da página-------- */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: var(--fontSecundaria);
+    color: var(--corPrimaria);
+    
+}
+
+body {
+    background: linear-gradient(45deg, 
+    var(--preto), 
+    var(--cinza), 
+    var(--preto),
+    var(--corTercearia));
+    background-size: 400% 400%;
+    height: 100vh;
+    animation: cores 15s ease infinite;
+}
+
+/* --------Configurando o menu-------- */
+.menu ul{
+    display: flex;
+    justify-content: center;
+    background-color:var(--dark1);
+    height: 5vh;
+}
+
+.menu ul li {
+    padding-right: 2vw;
+    padding-top: 0.9vh;
+}
+
+.menu ul li a {
+    color: var(--corPrimaria);
+    font-size: 1.1vw;
+    transition: color 1s;
+}
+
+.menu ul li a:hover {
+    color: var(--corSecundaria);
+}
+
+/* --------Configurando Container principal-------- */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3vh 10vw;
+}
+
+.txt {
+    width: 60%;
+}
+
+.txt h1, h2 {
+    font-family: var(--fontPrimaria);
+    padding: 0.1rem 0;
+}
+
+.txt span{
+    color: var(--corSecundaria);
+    transition: color 1s;
+    font-size: 2.5rem;
+}
+
+.txt span:hover {
+    color: var(--corTercearia);
+}
+
+h1 {
+    font-size: 3.7rem;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+article p{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 0 ;
+}
+
+.containerSlide {
+    width: 400px;
+    height: auto;
+    padding: 0.5rem 0; 
+}
+
+.principal {
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slide {
+    display: flex;
+    width: 400%;
+    transition: all .8s;
+}
+
+.slide img{
+    width: 400px;
+    height: auto;
+}
+
+label img {
+    width: 66px;
+    cursor: pointer;
+    float: left;
+    opacity: 0.3;
+    transition: all .4s;
+    border-radius: 10px;
+}
+
+#f2:checked ~ .principal .slide {
+    margin-left: -100%;
+}
+
+#f3:checked ~ .principal .slide {
+    margin-left: -200%;
+}
+
+#f4:checked ~ .principal .slide {
+    margin-left: -300%;
+}
+
+#f5:checked ~ .principal .slide {
+    margin-left: -400%;
+}
+
+#f6:checked ~ .principal .slide {
+    margin-left: -500%;
+}
+
+
+#aero2:checked ~ .principal .slide {
+    margin-left: -100%;
+}
+
+#aero3:checked ~ .principal .slide {
+    margin-left: -200%;
+}
+
+#aero4:checked ~ .principal .slide {
+    margin-left: -300%;
+}
+
+#aero5:checked ~ .principal .slide {
+    margin-left: -400%;
+}
+
+#aero6:checked ~ .principal .slide {
+    margin-left: -500%;
+}
+
+
+#g2:checked ~ .principal .slide {
+    margin-left: -100%;
+}
+
+#g3:checked ~ .principal .slide {
+    margin-left: -200%;
+}
+
+#g4:checked ~ .principal .slide {
+    margin-left: -300%;
+}
+
+#g5:checked ~ .principal .slide {
+    margin-left: -400%;
+}
+
+#g6:checked ~ .principal .slide {
+    margin-left: -500%;
+}
+
+
+#p2:checked ~ .principal .slide {
+    margin-left: -100%;
+}
+
+#p3:checked ~ .principal .slide {
+    margin-left: -200%;
+}
+
+#p4:checked ~ .principal .slide {
+    margin-left: -300%;
+}
+
+#p5:checked ~ .principal .slide {
+    margin-left: -400%;
+}
+
+#p6:checked ~ .principal .slide {
+    margin-left: -500%;
+}
+
+input[name="grupo"] {
+    display: none;
+}
+
+input[name="grupo"]:checked + label img {
+    opacity: .9;
+}
+
+/* --------Animação para troca de cores mais suave-------- */
+@keyframes cores {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* --------Animação de fade-in / fade-out-------- */
+@keyframes slidel {
+    0% {
+        /* transform: translateX(-40vw); */
+        opacity: 1;
+    }
+    
+    50% {
+        
+        opacity: 0.1;
+    }
+    100% {
+        /* transform: translateX(40vw); */
+        opacity: 1;
+    }
+}
+
+/* --------Responsividade para telas menores que 500px-------- */
+@media screen and (max-width: 500px) {
+    body {
+        background-repeat: repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .menu ul{
+        height: 4vh;
+    }
+    
+    .menu ul li a {
+        font-size: 1rem;
+        padding: 0 7px;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 2vh 0;
+    }
+    
+    .txt {
+        width: 94vw;
+    }
+
+    .txt h2 {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    
+    .txt p {
+        font-size: 1rem;
+        padding: 0;
+        text-align: justify;
+    }
+
+    .txt span{
+        font-size: 2rem;
+    }
+   
+    .containerSlide {
+        width: 94vw;
+        padding: 0.5rem 0; 
+    }
+
+    .principal {
+        width: 94vw;
+        height: auto;
+    }
+
+    .slide {
+        width: 94vw;
+    }
+    
+    .slide img{
+        width: 94vw;
+        height: auto;
+    }
+    
+    label img {
+        width: 61px;
+    }
+}
+
+/* --------Resposividade para telas menores que 280px-------- */
+@media screen and (max-width: 281px) {
+    footer {
+        height: 4vh;
+        font-size: 1.5vh;
+    }
+
+    .social {
+        margin-top:50px;
+    }
+
+    .imgfrente img{
+        margin-top: 30px;
+        width: 100vw;
+        height: auto;
+    }
+
+    .txt {
+        width: 94vw;
+    }
+
+    .txt h2 {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .txt p {
+        font-size: 0.8rem;
+        padding: 0;
+        text-align: justify;
+    }
+
+    .txt span{
+        font-size: 1.3rem;
+    }
+
+    .menu ul{
+        height: 5vh;
+    }
+    
+    .menu ul li a {
+        font-size: 0.7rem;
+        padding: 0 7px;
+    }
+
+    label img {
+        width: 43.5px;
+    }
+}

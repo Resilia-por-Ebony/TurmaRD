@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=Ubuntu:wght@&display=swap');
+
+/* --------Variáveis de estilo-------- */
+:root{
+    --dark1: #323232;
+    --dark2: #1c1c1c;
+    --corPrimaria: #dddddd;
+    --corSecundaria: #7fef86;
+    --corTercearia: #2a9d11;
+    --preto: #000;
+    --cinza: #585858;
+    --branco: #fff;
+    --fontPrimaria: 'Prosto One', cursive;
+    --fontSecundaria: 'Ubuntu', sans-serif;
+}
+
+/* --------Configuração geral da página-------- */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: var(--fontSecundaria);
+    color: var(--corPrimaria);
+}
+
+body {
+    background: linear-gradient(45deg, 
+    var(--preto), 
+    var(--cinza), 
+    var(--preto),
+    var(--corTercearia));
+    background-size: 400% 400%;
+    height: 100vh;
+    animation: cores 15s ease infinite;
+}
+
+/* --------Configurando o menu-------- */
+.menu ul{
+    display: flex;
+    justify-content: center;
+    background-color:var(--dark1);
+    height: 5vh;
+}
+
+.menu ul li {
+    padding: 0 2vw;
+    padding-top: 0.9vh;
+}
+
+.menu ul li a {
+    color: var(--corPrimaria);
+    font-size: 1.1vw;
+    transition: color 1s;
+}
+
+.menu ul li a:h/* --------Configurando Container principal-------- */over {
+    color: var(--corSecundaria);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 14vh;
+}
+
+/* --------Configurando formulário-------- */
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, textarea, button {
+    text-align: center;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    color: var(--dark2);
+}
+
+textarea {
+    height: 20vh;
+    width: 50vw;
+}
+
+input {
+    height: 5vh;
+    width: 50vw;
+}
+
+input:focus, textarea:focus {
+    background: var(--corSecundaria);
+    color: var(--preto);
+    font-size: 1rem;
+    outline: 0;
+}
+
+#enviar {
+    width: 12vw;
+    height: 2rem;
+    background: linear-gradient(90deg, 
+    var(--corSecundaria),
+    var(--corPrimaria));
+    color: var(--preto);
+    font-weight: 500;
+}
+
+#enviar:hover {
+    background: linear-gradient(90deg, 
+    var(--corTercearia),
+    var(--dark1));
+    color: var(--corPrimaria);
+}
+
+#enviar:active {
+    color: var(--cinza);
+}
+
+/* --------Configurando rodapé-------- */
+footer {
+    background-color:var(--dark1);
+    height: 5vh;
+    color: var(--corPrimaria);
+    font-size: 2.3vh;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    position: relative;
+    padding-top: 1vh;
+    animation: slidel 5s ease infinite;
+}
+
+/* --------Animação para troca de cores mais suave-------- */
+@keyframes cores {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* --------Animação de fade-in / fade-out-------- */
+@keyframes slidel {
+    0% {
+        /* transform: translateX(-40vw); */
+        opacity: 1;
+    }
+    
+    50% {
+        
+        opacity: 0.1;
+    }
+    100% {
+        /* transform: translateX(40vw); */
+        opacity: 1;
+    }
+}
+
+/* --------Responsividade para telas menores que 500px-------- */
+@media screen and (max-width: 500px) {
+    body {
+        background-repeat: repeat;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .menu ul{
+        height: 4vh;
+    }
+    
+    .menu ul li a {
+        font-size: 1rem;
+        padding: 0 7px;
+    }
+
+    textarea {
+        height: 20vh;
+        width: 70vw;
+    }
+    
+    input {
+        height: 3vh;
+        width: 70vw;
+    }
+
+    #enviar {
+        width: 14vw;
+        height: 1.8rem;
+    }
+
+    footer {
+        height: 4vh;
+        font-size: 1.5vh;
+    }
+}
+
+/* --------Resposividade para telas menores que 280px-------- */
+@media screen and (max-width: 281px) {
+    footer {
+        height: 4vh;
+        font-size: 1.5vh;
+    }
+
+    .menu ul{
+        height: 5vh;
+    }
+    
+    .menu ul li a {
+        font-size: 0.7rem;
+        padding: 0 7px;
+    }
+
+    #enviar {
+        width: 18vw;
+        height: 1.6rem;
+    }
+}

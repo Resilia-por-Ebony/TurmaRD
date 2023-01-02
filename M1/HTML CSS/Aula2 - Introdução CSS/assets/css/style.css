@@ -1,0 +1,32 @@
+/* 
+Acessando por ID (Sintaxe '#')
+Embora funcione em mais de um lugar, não é uma boa prática
+usar o ID em mais de uma tag. 
+
+Acessando por Class (Sintaxe '.')
+Classes são reutilizáveis, podendo estar em 1 ou várias tags.
+*/
+
+/*
+Essa alteração vai afetar apenas A TAG onde tiver id="frasedodia"
+mesmo que existam outras TAG P, apenas uma será estilizada 
+*/
+
+#frasedodia {
+    /* Cor do texto */
+    color: #0a740f;
+
+    /* Tamanho do texto */
+    font-size: 30px;
+
+    /* Posicionamento horizontal do texto */
+    text-align: center;
+}
+
+.imgPrincipal {
+    /* Tamanho em largura da imagem */
+    width: 200px;
+
+    /* Tamanho em altura da imagem */
+    height: auto;
+}

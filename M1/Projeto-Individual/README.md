@@ -1,7 +1,11 @@
 <h1 align="center">Projeto Individual M1</h1>
 
 <p align="center">
+<<<<<<< HEAD
 <a href="">clique aqui</a>, para ver o projeto.
+=======
+<a href="https://leonardop1.netlify.app/" target="_blank">clique aqui</a>, para ver o projeto.
+>>>>>>> upstream
 </p>
 
 <p>
