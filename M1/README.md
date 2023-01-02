@@ -31,8 +31,16 @@
     <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/main/M1/HTML%20CSS" >HTML e CSS</a><br>
     <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/main/M1/Js" >JavaScript</a>
     <h4>Projetos</h4>
-    <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/main/M1/Projeto-Individual" >Projeto individual</a><br>
-    <a href="#" >Projeto em grupo</a>
+    <p> 
+        <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/main/M1/Projeto-Individual" >
+            M1 ♦ Projeto individual
+        </a>
+        ¨→..
+        <a href="https://leonardop1.netlify.app/" target="_blank">VER</a><br>
+        <a href="#" >M1 ♦ Projeto em grupo</a>
+        ¨→..
+        <a href="https://leonardop1.netlify.app/" target="_blank">VER</a><br>
+    </p>
 </div>
 <br/>
 <div align="center">
