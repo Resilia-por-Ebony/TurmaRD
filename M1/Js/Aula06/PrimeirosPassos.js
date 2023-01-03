@@ -54,12 +54,17 @@ console.log(`Seu nome é ${nome} ${nomedomeio} ${nomefinal} `)
 
 let nome = 'Leonardo';     // String literal.
 let idade = 30;            // Number literal (não diferencia inteiro ou float)
-let status = true;         // boolean.
+let situacao = true;         // boolean.
 let sobrenome = undefined; // tipo sem tipo, pouco usado.
 let corEscolhida = null;   // (object) receberá um valor depois q o programa iniciar.
 
 
-
+// Verificando tipo de dado de cada variável
+console.log(typeof(nome));
+console.log(typeof(idade));
+console.log(typeof(situacao));
+console.log(typeof(sobrenome));
+console.log(typeof(corEscolhida));
 
 
 
