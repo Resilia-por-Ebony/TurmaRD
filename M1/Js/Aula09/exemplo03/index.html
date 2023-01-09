@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+    Note que agora vamos pegar as informações dos inputs.
+    Embora estes e quaisquer outros elementos HTML possam ser criados
+    pelo arquivo de JS, neste caso vamos criá-los aqui mesmo. 
+    -->
+
+    <div class="container">
+
+        <!-- Criando os inputs, as label's podem ser substituidas
+        neste exemplo, por <p> e/ou apenas inserção dos textos-->
+        <div>
+            <label for="numero1">Primeiro número: </label>
+            <input type="number" name="numero1" id="numero1" min="0">
+        </div>
+
+        <div>
+            Segundo número: 
+            <input type="number" name="numero2" id="numero2" min="0">
+        </div>
+
+
+        <!-- 
+        Criando um botão e inserindo uma instrução que indica que
+        ao ser clicado, este botão acionará uma função JS chamada 
+        calcular(), muito importante que os () sejam inseridos
+        após o nome da função que foi criada no arquivo JS. 
+        -->
+        <button id="calc" onclick="calcular()">Calcular</button>
+    
+        <!-- 
+        Neste cenário, configuramos uma div que inicialmente 
+        está vazia, para receber a resposta do cálculo, gerado pela
+        função calcular()
+        -->
+        <div class="bolinha"></div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
