@@ -1,0 +1,44 @@
+.container {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    background-color: #c1c1c1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 1.5rem;
+}
+
+.container input {
+    margin: 3px 0 15px 0;
+    width: 70px;
+    height: 22px;
+    border-radius: 5px;
+}
+
+#calc {
+    width: 80px;
+    height: 30px;
+    font-size: 1rem;
+    background: #5d5c5c;
+    color: white;
+}
+
+.bolinha {
+    width: 80px;
+    height: 80px;
+    background: #91e475;
+    margin-top: 15px;
+    border: 1px solid green;
+    border-radius: 50%;
+
+    font-size: 1.7rem;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
