@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #8cf4ec;
+    margin-top: 2vh;
+    border: 2px solid #6bd8cf;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.titulo {
+    padding: 2vh 0;
+}
+
+.entrada {
+    font-size: 40px;
+}
+
+.entrada input {
+    height: 30px;
+    vertical-align: middle;
+    background-color: #33716c;
+    border: none;
+    width: 50px;
+    font-size: 18px;
+    padding-left: 5px;
+    color: white;
+    border-radius: 4px;
+}
+
+.entrada button {
+    vertical-align: middle;
+    width: 80px;
+    height: 30px;
+    background-color: #05635b;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.saida {
+    width: 380px;
+    height: 400px;
+    background-color: #71dcd3;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.saida img {
+    margin-top: 30px;
+    width: 200px;
+}
