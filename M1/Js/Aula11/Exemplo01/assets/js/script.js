@@ -82,7 +82,17 @@ function confirmarSenha() {
     }
 }
 
+/* 
+Verificando se todos os campos foram preenchidos corretamente. 
+Note que as funçãos acima, quando recebem um valor aceitável de
+acordo com o teste, elas retornam 'true'. Desta forma, basta verificar
+se todos elas retornaram 'true', alguma não retornar, subentende-se
+que aquele campo não foi preenchido corretamente e o form não poderá
+ser enviado.
+*/
 function enviarForm() {
+    
+    // Verificar se todas as funções retornaram 'true'
     if (verificarNome() && verificarEmail() && verificarSenha() && confirmarSenha()){
         alert('Formulário enviado com sucesso!')
     }
