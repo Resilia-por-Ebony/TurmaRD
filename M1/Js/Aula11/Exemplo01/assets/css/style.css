@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 400px; 
+    height: 250px;
+    background: gray;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caixadetexto {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixadetexto span {
+    font-size: 12px;
+}
+
+.caixadetextoErro span {
+    color: #d21e14;
+}
+
+.entrada {
+    border-radius: 10px;
+    padding-left: 8px;
+    margin-top: 10px; 
+}
+
+#btnEnviar {
+    margin-top: 5px;
+}
+
+/* 
+Note que estas classes não existem no HTML,
+elas serão criadas de forma dinamica no JS ↓ 
+*/
+
+.caixadetextoErro {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixadetextoErro .entrada {
+    border-color: #d21e14;
+}
+
+.caixadetextoAcerto span {
+    color: #4ae00a;
+}
+
+.caixadetextoAcerto {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixadetextoAcerto .entrada {
+    border-color: #4ae00a;
+}
+
+
+
+
