@@ -24,6 +24,7 @@ function verificarNome() {
     // Caso esteja preenchido e o tamanho seja maior que 5 caracteres
     else {
         mensagemAcerto(nome, 'Legal, está ok!')
+        return true
     }
 }
 
@@ -37,6 +38,7 @@ function verificarEmail() {
     // Usando um regex para validade se o email inserido está dentro do padrão
     if (regexEmail.test(emailValor)) {
         mensagemAcerto(email, 'Ok, email válido!')
+        return true
     }
 
     // Caso esteja preenchido o padrão respeitado: texto@texto.texto 
@@ -58,6 +60,7 @@ function verificarSenha() {
     // Caso esteja preenchido e a quantidade de caracteres maior que 8 
     else {
         mensagemAcerto(senha, 'Ok, senha aceita!')
+        return true
     }
 }
 
@@ -72,11 +75,22 @@ function confirmarSenha() {
     // Verificando se as senhas são absolutamente iguais
     if (senhaValor === senhaconfValue) {
         mensagemAcerto(senhaconf, 'Ok, as senha são iguais!')
+        return true
     }
     else {
         mensagemErro(senhaconf, 'Ops, senhas não conferem!')
     }
 }
+
+function enviarForm() {
+    if (verificarNome() && verificarEmail() && verificarSenha() && confirmarSenha()){
+        alert('Formulário enviado com sucesso!')
+    }
+    else {
+        alert('Ops, parece que um ou mais campos não foram preenchidos corretamnte!')
+    }
+}
+
 
 
 /* 
