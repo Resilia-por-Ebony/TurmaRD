@@ -73,3 +73,7 @@ catch (erro){
     console.log(erro.message);
 }
 
+finally {
+    //Note que, independente de ter dado erro ou não, está instrução será executada.
+    document.write('Volte sempre!')
+}
