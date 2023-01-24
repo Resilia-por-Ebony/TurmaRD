@@ -45,6 +45,7 @@
 <div align="center">
     <h4>Módulos</h4>
     <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/main/M1" >M1</a><br>
+    <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/main/M2" >M2</a><br>
     <h4>Projetos</h4>
     <p> 
         <a href="https://github.com/Resilia-por-Ebony/TurmaRD/tree/main/M1/Projeto-Individual" >
