@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 60vw;
+    height: 20vh;
+    background: #f7b8f1;
+    border-radius: 14px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#entrada {
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.5vw 2vh;
+}
+
+#converter{
+    padding: 0.2vw 0.8vh;
+    margin-top: 1vh;
+}
+
+#saida {
+    background: #77056c;
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.5vw 2vh;
+    color: #ebebeb;
+    margin-top: 1vh;
+}

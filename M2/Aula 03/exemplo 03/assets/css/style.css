@@ -1,0 +1,24 @@
+.container {
+    background: #101010;
+    color: aliceblue;
+    width: 200px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#entrada {
+    border-radius: 5px;
+    text-align: center;
+    margin: 2.5px 0;
+}
+
+button {
+    border-radius: 5px;
+    background-color: aqua;
+    font-weight: 600;
+    margin: 2.5px 0;
+}
