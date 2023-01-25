@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 140px;
+    background: #f6a1a1;
+    border-radius: 20px;
+}
+
+.txt {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #b9f6a1;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.btn {
+    margin-left: 8px;
+    width: 60px;
+}
