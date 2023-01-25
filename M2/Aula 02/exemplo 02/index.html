@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <form class="form" id="form">
+            <div class="caixadetexto">
+                <input type="text" id="nome" name="nome" class="entrada" 
+                placeholder="Nome" oninput="verificarNome()">
+                
+                <!-- Nesta tag vamos inserir de forma dinamica o texto -->
+                <span></span>
+            </div>
+            
+            <div class="caixadetexto">
+                <input type="text" id="email" name="email" class="entrada" 
+                placeholder="Seu melhor email" oninput="verificarEmail()">
+                
+                <span></span>
+            </div>
+
+            <div class="caixadetexto">
+                <input type="password" id="senha" name="senha" class="entrada" 
+                placeholder="Senha" oninput="verificarSenha()">
+                <span></span>
+            </div>
+
+            <div class="caixadetexto">
+                <input type="password" id="senhaconf" name="senhaconf" class="entrada" 
+                placeholder="Confirmação de Senha" oninput="confirmarSenha()">
+                <span></span>
+            </div>
+        </form>
+
+        <input type="submit" id="btnEnviar" onclick="cadastro()">
+
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
