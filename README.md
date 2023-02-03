@@ -53,15 +53,9 @@
         </a>
         ¨→..
         <a href="https://leonardop1.netlify.app/" target="_blank">VER</a><br>
-        <a href="#" >M1 ♦ Projeto em grupo</a>
-        ¨→..
-        <a href="#" target="_blank">VER</a><br>
         <a href="#" >
             M2 ♦ Projeto individual
         </a>
-        ¨→..
-        <a href="#" target="_blank">VER</a><br>
-        <a href="#" >M2 ♦ Projeto em grupo</a>
         ¨→..
         <a href="#" target="_blank">VER</a><br>
     </p>
